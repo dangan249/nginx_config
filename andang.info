@@ -1,0 +1,11 @@
+server {
+ root /home/andang/andang.info;
+ index index.html index.htm;
+
+ server_name andang.info;
+
+ location / {
+  try_files $uri $uri/ /index.html;
+ }
+
+}
